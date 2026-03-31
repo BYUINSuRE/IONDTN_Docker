@@ -1,49 +1,26 @@
-# Build version and types
-FROM ubuntu:22.04 AS builder
+FROM ubuntu:24.04 AS builder
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Grabs all the dependencies needed for ion/dtn
+# Grabs all the dependencies needed for ION-DTN
 RUN apt-get update && apt-get install -y \
-    build-essential \
-    git \
-    autoconf \
-    automake \
-    libtool \
-    libssl-dev \
-    tcl-dev \
-    # ca-certificates \
-    # perl \
-    && rm -rf /var/lib/apt/lists/*
+    build-essential automake autoconf libtool m4 \
+    cmake pkg-config git libssl-dev libjansson-dev ninja-build \
+    rsync valgrind ruby
 
-# Grabs ION from github and stores it in the tmp directory
-WORKDIR /tmp
-RUN git clone https://github.com/nasa-jpl/ION-DTN.git
-WORKDIR /tmp/ION-DTN
+# Grabs ION-DTN from Github, on branch with BSL enabled
+# Also initializes and updates all submodules
+RUN git clone --branch ion-open-source-4.2.0-a.1 --recurse-submodules \
+    https://github.com/nasa-jpl/ION-DTN.git
 
-
-# Try to checkout the specific tag, fallback to master if the tag format changed
-RUN git checkout ion-open-source-4.1.4 || git checkout master 
-
-
-RUN autoreconf -i && \
-    ./configure && \
-    make -j$(nproc) && \
-    make install && \
-    ldconfig
-
-# Runtime Stage
-FROM ubuntu:22.04
-ENV DEBIAN_FRONTEND=noninteractive
-
-RUN apt-get update && apt-get install -y \
-    libssl3 \
-    tcl \
-    iputils-ping \
-    && rm -rf /var/lib/apt/lists/*
-
-COPY --from=builder /usr/local /usr/local
+# Build and install ION with BSL
+WORKDIR /ION-DTN
+RUN autoreconf -fi
+RUN ./configure --enable-bsl
+RUN make -j$(nproc)
+RUN make install
 RUN ldconfig
 
+# Now set up the entrypoint script
 WORKDIR /ion
 COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
