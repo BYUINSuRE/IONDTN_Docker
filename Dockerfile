@@ -20,9 +20,6 @@ RUN make -j$(nproc)
 RUN make install
 RUN ldconfig
 
-# Now set up the entrypoint script
-WORKDIR /ion
-COPY entrypoint.sh .
-RUN chmod +x entrypoint.sh
-
-ENTRYPOINT ["./entrypoint.sh"]
+# Now run the tests
+WORKDIR /ION-DTN/tests
+CMD ["./runtests", "bpsec/bpsec-all-multinode-test.bsl"]

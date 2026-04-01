@@ -1,19 +1,8 @@
-version: "3.8"
-
 services:
-  node1:
+  ion-dtn:
     build: .
-    container_name: node1
-    hostname: node1
-    networks:
-      - ion-net
-    stdin_open: true
-    tty: true
-
-  node2:
-    build: .
-    container_name: node2
-    hostname: node2
+    container_name: ion-dtn
+    hostname: ion-dtn
     networks:
       - ion-net
     stdin_open: true
