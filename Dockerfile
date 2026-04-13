@@ -22,4 +22,6 @@ RUN ldconfig
 
 # Now run the tests
 WORKDIR /ION-DTN/tests
-CMD ["./runtests", "bpsec/bpsec-all-multinode-test.bsl"]
+COPY signature_replay /ION-DTN/tests/signature_replay/
+
+CMD ["./runtests", "signature_replay"]

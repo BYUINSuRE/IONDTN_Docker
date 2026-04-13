@@ -1,13 +1,6 @@
+name: iondtn-docker
 services:
   ion-dtn:
     build: .
     container_name: ion-dtn
     hostname: ion-dtn
-    networks:
-      - ion-net
-    stdin_open: true
-    tty: true
-
-networks:
-  ion-net:
-    driver: bridge
