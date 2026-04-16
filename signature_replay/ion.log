@@ -1,0 +1,103 @@
+[2026/04/16-05:08:35] Stopping ionadmin.
+[2026/04/16-05:08:35] [i] rfxclock is running.
+[2026/04/16-05:08:35] [i] No congestion forecast; horizon reached.
+[2026/04/16-05:08:35] [i] ionwarn finished.
+[2026/04/16-05:08:36] Stopping ionadmin.
+[2026/04/16-05:08:36] [i] No congestion forecast; horizon reached.
+[2026/04/16-05:08:36] [i] ionwarn finished.
+[2026/04/16-05:08:37] [i] No congestion forecast; horizon reached.
+[2026/04/16-05:08:37] [i] ionwarn finished.
+[2026/04/16-05:08:37] Stopping ionsecadmin.
+[2026/04/16-05:08:38] [i] LTP CLOSED_EXPORTS_ENABLED enhancement active.
+[2026/04/16-05:08:38] [i] Span 9999 initialized with global unified mode defaults: maxRetries=5, maxSegmentLossRate=0.0100
+[2026/04/16-05:08:38] [i] Span to engine 9999 (explicit config, max xmit segment size 1500, max recv segment size 1): xmit segment loss rate 0.010000, recv segment loss rate 0.010000, max timeouts 5.
+[2026/04/16-05:08:38] [i] Span 32767 initialized with global unified mode defaults: maxRetries=5, maxSegmentLossRate=0.0100
+[2026/04/16-05:08:38] [i] Span to engine 32767 (explicit config, max xmit segment size 1500, max recv segment size 1): xmit segment loss rate 0.010000, recv segment loss rate 0.010000, max timeouts 5.
+[2026/04/16-05:08:38] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -10
+[2026/04/16-05:08:38] Stopping ltpadmin.
+[2026/04/16-05:08:38] [i] ltpmeter is running.
+[2026/04/16-05:08:38] [i] ltpmeter is running.
+[2026/04/16-05:08:38] [i] ltpdeliv is running.
+[2026/04/16-05:08:38] [i] ltpclock is running.
+[2026/04/16-05:08:38] [i] udplso is running, local=0.0.0.0:56788 (IPv4), peer=127.0.0.1:5113 (IPv4), rengine=32767.
+[2026/04/16-05:08:38] [i] udplso is running, local=0.0.0.0:40298 (IPv4), peer=127.0.0.1:9118 (IPv4), rengine=9999.
+[2026/04/16-05:08:38] [i] udplsi is running, listening on 127.0.0.1:9118 (IPv4).
+[2026/04/16-05:08:39] [i] This node deploys bundle protocol version 7.
+[2026/04/16-05:08:39] [i] CBR/CT (Compressed Bundle Reporting and Custody Transfer) is enabled.
+[2026/04/16-05:08:39] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:39] Stopping ipnadmin.
+[2026/04/16-05:08:39] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:39] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:39] [i] bpclm is running: ipn:9999.0
+[2026/04/16-05:08:39] [i] bpclm is running: ipn:32767.0
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] Stopping bpadmin.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] bpclock is running.
+[2026/04/16-05:08:40] [i] Not configured for multicast; cpsd stopping.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] bptransit is running.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] ltpclo is running.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] ipnadminep is running.
+[2026/04/16-05:08:40] [i] ltpclo is running.
+[2026/04/16-05:08:40] [i] ipnfw is running.
+[2026/04/16-05:08:40] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:40] [i] ltpcli is running.
+[2026/04/16-05:08:41] [x] src from 1970/01/01-00:00:00 to 2026/04/16-05:08:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2026/04/16-05:08:41] [x] fwd from 1970/01/01-00:00:00 to 2026/04/16-05:08:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2026/04/16-05:08:41] [x] xmt from 1970/01/01-00:00:00 to 2026/04/16-05:08:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2026/04/16-05:08:41] [x] rcv from 1970/01/01-00:00:00 to 2026/04/16-05:08:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2026/04/16-05:08:41] [x] dlv from 1970/01/01-00:00:00 to 2026/04/16-05:08:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2026/04/16-05:08:41] [x] rfw from 1970/01/01-00:00:00 to 2026/04/16-05:08:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2026/04/16-05:08:41] [x] exp from 1970/01/01-00:00:00 to 2026/04/16-05:08:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2026/04/16-05:08:41] [i] parseSocketSpec: Parsed: @:2357
+[2026/04/16-05:08:41] [i] Starting configuration server.
+[2026/04/16-05:08:41] [i] parseSocketSpec: Parsed: 2886860802:2357
+[2026/04/16-05:08:41] [i] Starting registration server.
+[2026/04/16-05:08:41] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:41] [i] Configuration server is running.
+[2026/04/16-05:08:41] [i] Starting daemon's AAMS module.
+[2026/04/16-05:08:41] [i] Registrar is running.
+[2026/04/16-05:08:41] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:41] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:41] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:41] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:41] [?] Registration refused: no cell census
+[2026/04/16-05:08:42] [?] Registration refused: no cell census
+[2026/04/16-05:08:43] [?] Registration refused: no cell census
+[2026/04/16-05:08:44] [?] Registration refused: no cell census
+[2026/04/16-05:08:45] [?] Registration refused: no cell census
+[2026/04/16-05:08:46] [?] Registration refused: no cell census
+[2026/04/16-05:08:47] [?] Registration refused: no cell census
+[2026/04/16-05:08:48] [?] Registration refused: no cell census
+[2026/04/16-05:08:49] [i] Daemon AAMS module is running.
+[2026/04/16-05:08:55] [i] parseSocketSpec: Parsed: @:2357
+[2026/04/16-05:08:55] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:55] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:55] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:55] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:08:55] [i] BSL not configured; security processing disabled.  Use 'm bsl' in bprc to enable.
+[2026/04/16-05:08:55] [i] RAMS gateway is running.
+[2026/04/16-05:09:01] [i] parseSocketSpec: Parsed: @:2357
+[2026/04/16-05:09:01] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:01] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:01] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:01] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:03] [i] parseSocketSpec: Parsed: @:2357
+[2026/04/16-05:09:03] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:03] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:03] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:03] [?] parseSocketSpec: Empty or NULL socketSpec: 
+[2026/04/16-05:09:04] [i] DGR access point has been closed.
+[2026/04/16-05:09:04] [i] DGR access point has been closed.
+[2026/04/16-05:09:05] [i] Heartbeat thread ended.
+[2026/04/16-05:09:05] [i] AMS service terminated.
+[2026/04/16-05:09:07] [i] Stopping RAMS gateway...
+[2026/04/16-05:09:38] [i] udplsi shutting down...
+[2026/04/16-05:09:38] [i] udplsa receiver thread has ended.
+[2026/04/16-05:09:38] [i] udplsi has ended.

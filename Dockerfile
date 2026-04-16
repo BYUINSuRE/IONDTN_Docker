@@ -21,7 +21,6 @@ RUN make install
 RUN ldconfig
 
 # Now run the tests
-WORKDIR /ION-DTN/tests
-COPY signature_replay /ION-DTN/tests/signature_replay/
+WORKDIR /ION-DTN/tests/signature_replay
 
-CMD ["./runtests", "signature_replay"]
+CMD ["./dotest", "signature_replay"]

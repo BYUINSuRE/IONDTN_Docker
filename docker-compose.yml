@@ -4,3 +4,6 @@ services:
     build: .
     container_name: ion-dtn
     hostname: ion-dtn
+    privileged: true
+    volumes:
+    - ./signature_replay:/ION-DTN/tests/signature_replay
