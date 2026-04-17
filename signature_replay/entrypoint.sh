@@ -12,6 +12,10 @@ echo "Starting ION..."
 ionadmin amroc.ionrc
 sleep 1
 
+echo "Configuring BP..."
+bpadmin amroc.bprc
+sleep 1
+
 echo "Starting AMS..."
 amsd @ @ amsdemo test "" &
 sleep 3

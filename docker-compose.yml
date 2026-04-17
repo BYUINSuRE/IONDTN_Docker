@@ -2,6 +2,7 @@ name: iondtn-docker
 services:
   ion-dtn:
     build: .
+    shm_size: "1g"
     container_name: ion-dtn
     hostname: ion-dtn
     privileged: true
