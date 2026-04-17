@@ -2,6 +2,7 @@ name: iondtn-docker
 services:
   ion-dtn:
     build: .
+    ipc: host
     container_name: ion-dtn
     hostname: ion-dtn
     privileged: true

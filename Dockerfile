@@ -15,7 +15,7 @@ RUN git clone --branch ion-open-source-4.2.0-a.1 --recurse-submodules \
 # Build and install ION with BSL
 WORKDIR /ION-DTN
 RUN autoreconf -fi
-RUN ./configure --enable-bsl
+RUN ./configure --enable-bsl --enable-ams-debug --enable-ams-industrial
 RUN make -j$(nproc)
 RUN make install
 RUN ldconfig
@@ -23,4 +23,4 @@ RUN ldconfig
 # Now run the tests
 WORKDIR /ION-DTN/tests/signature_replay
 
-CMD ["./dotest", "signature_replay"]
+CMD ["bash", "entrypoint.sh"]
