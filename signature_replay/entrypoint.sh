@@ -2,7 +2,7 @@
 
 module_name="replay"
 
-# Compile the program
+# Compile the program (commands from AMS programmer's guide)
 echo "Compiling $module_name.c ..."
 
 gcc -g -Wall -Werror -Dlinux -DUDPTS -DTCPTS -DDGRTS -DNOEXPAT -fPIC -DSPACE_ORDER=3 \
@@ -17,10 +17,6 @@ gcc -g -Wall -Werror -Dlinux -DUDPTS -DTCPTS -DDGRTS -DNOEXPAT -fPIC -DSPACE_ORD
 echo "Starting ION..."
 ionadmin amroc.ionrc
 sleep 1
-
-# echo "Configuring BP..."
-# bpadmin amroc.bprc
-# sleep 1
 
 # Start AMS
 echo "Starting AMS..."
