@@ -46,6 +46,10 @@ static int	runPitcher(void)
 	while (1)
 	{
 		if (ams_get_event(me, AMS_BLOCKING, &evt) < 0) return 0;
+
+		printf("Received event of type %d in pitcher\n", ams_get_event_type(evt));
+		fflush(stdout);
+
 		ams_parse_notice(evt, &state, &change, &zn, &nn, &rn, &dcn,
 				&dzn, &sn, &pr, &fl, &sequence, &diligence);
 		ams_recycle_event(evt);
@@ -78,11 +82,15 @@ static int	runCatcher(void)
 		return -1;
 	}
 
-	ams_invite(me, 0, 0, 0, 1, 8, 0, AmsArrivalOrder, AmsAssured);
+	// ams_invite(me, 0, 0, 0, 1, 8, 0, AmsArrivalOrder, AmsAssured);
 
 	while (1)
 	{
 		if (ams_get_event(me, AMS_BLOCKING, &evt) < 0) return 0;
+
+		printf("Received event of type %d in catcher\n", ams_get_event_type(evt));
+		fflush(stdout);
+
 		if (ams_get_event_type(evt) == AMS_MSG_EVT) break;
 		else ams_recycle_event(evt);
 	}
