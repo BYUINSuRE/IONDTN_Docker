@@ -15,7 +15,7 @@ RUN git clone --branch ion-open-source-4.2.0-a.1 --recurse-submodules \
 # Build and install ION with BSL
 WORKDIR /ION-DTN
 RUN autoreconf -fi
-RUN ./configure --enable-bsl --enable-ams-debug --enable-ams-industrial
+RUN ./configure --enable-bsl --enable-ams-debug
 RUN make -j$(nproc)
 RUN make install
 RUN ldconfig

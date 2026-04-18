@@ -1,8 +1,9 @@
 
 # ION-DTN Docker Environment
-The container runs the BSL tests for the ION-DTN environment.
+The container demonstrates the AMS replay attacks on the ION-DTN environment.
 
 ### Container
+To build and run the demos: `docker compose up --build -d && docker compose logs -f`
 
 | Task | Command |
 | :--- | :--- |
@@ -10,6 +11,3 @@ The container runs the BSL tests for the ION-DTN environment.
 | **Stop and Remove** | `docker compose down` |
 | **Check Status** | `docker compose ps` |
 | **View Live Logs** | `docker compose logs -f` |
-
-## ION Specific Commands
-These commands are executed inside the running containers to manage the DTN stack.
