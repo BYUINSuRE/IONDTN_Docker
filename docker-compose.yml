@@ -1,24 +1,10 @@
-version: "3.8"
-
+name: iondtn-docker
 services:
-  node1:
+  ion-dtn:
     build: .
-    container_name: node1
-    hostname: node1
-    networks:
-      - ion-net
-    stdin_open: true
-    tty: true
-
-  node2:
-    build: .
-    container_name: node2
-    hostname: node2
-    networks:
-      - ion-net
-    stdin_open: true
-    tty: true
-
-networks:
-  ion-net:
-    driver: bridge
+    shm_size: "1g"
+    container_name: ion-dtn
+    hostname: ion-dtn
+    privileged: true
+    volumes:
+    - ./signature_replay:/ION-DTN/tests/signature_replay
