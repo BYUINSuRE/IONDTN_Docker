@@ -82,7 +82,7 @@ static int	runCatcher(void)
 		return -1;
 	}
 
-	// ams_invite(me, 0, 0, 0, 1, 8, 0, AmsArrivalOrder, AmsAssured);
+	ams_invite(me, 0, 0, 0, 1, 8, 0, AmsArrivalOrder, AmsAssured);
 
 	while (1)
 	{

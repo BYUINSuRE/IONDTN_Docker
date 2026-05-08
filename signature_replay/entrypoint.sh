@@ -1,6 +1,6 @@
 #!/bin/bash
 
-module_name="replay"
+module_name="amshello"
 
 # Compile the program (commands from AMS programmer's guide)
 echo "Compiling $module_name.c ..."
@@ -24,10 +24,10 @@ amsd @ @ amsdemo test "" &
 sleep 3
 
 echo "Running program..."
-./replay
+./amshello
 
 echo "Cleaning up..."
-rm replay replay.o
+rm $module_name $module_name.o
 
 echo "--- ION log ---"
 cat ion.log
