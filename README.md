@@ -1,9 +1,9 @@
 
 # ION-DTN Docker Environment
-The container demonstrates the AMS replay attacks on the ION-DTN environment.
+The container is intended to demonstrate the AMS replay attacks on the ION-DTN environment. It compiles the latest tagged release of ION-DTN, version `ion-open-source-4.2.0-a.1`. Currently, it compiles and runs the `amshello` example from the ION-DTN repository.
 
 ### Container
-To build and run the demos: `docker compose up --build -d && docker compose logs -f`
+To build and run the demo, showing logs: `docker compose up`
 
 | Task | Command |
 | :--- | :--- |
