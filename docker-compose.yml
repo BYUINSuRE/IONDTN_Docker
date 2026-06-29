@@ -7,4 +7,4 @@ services:
     hostname: ion-dtn
     privileged: true
     volumes:
-    - ./signature_replay:/ION-DTN/tests/signature_replay
+    - ./amshello:/ION-DTN/tests/amshello

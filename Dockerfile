@@ -21,6 +21,6 @@ RUN make install
 RUN ldconfig
 
 # Now run the tests
-WORKDIR /ION-DTN/tests/signature_replay
+WORKDIR /ION-DTN/tests/amshello
 
 CMD ["bash", "entrypoint.sh"]
